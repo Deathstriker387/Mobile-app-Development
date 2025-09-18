@@ -2,10 +2,10 @@ import 'package:task2/task2.dart' as task2;
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter your name: ");
+  print("Enter your name: ");
   String? name = stdin.readLineSync();
-
-  stdout.write("Enter your age: ");
+  print("You entered: '$name'");
+  print("Enter your age: ");
   String? ageInput = stdin.readLineSync();
   int? age = int.tryParse(ageInput ?? "");
 
