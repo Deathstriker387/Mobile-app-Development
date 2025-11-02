@@ -1,14 +1,4 @@
-// ============================================
-// CHAPTER 9: CREATING SCROLLING LISTS AND EFFECTS
-// Beginning Flutter by Marco L. Napoli
-// ============================================
 
-// This file contains all examples from the chapter:
-// 1. Card Widget Examples
-// 2. ListView.builder with ListTile
-// 3. GridView (count, extent, builder)
-// 4. Stack Widget
-// 5. CustomScrollView with Slivers
 
 import 'package:flutter/material.dart';
 
@@ -22,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Chapter 9 Examples',
+      title: 'week 10',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -31,9 +21,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ============================================
-// MAIN MENU
-// ============================================
+
 class MainMenu extends StatelessWidget {
   const MainMenu({Key? key}) : super(key: key);
 
@@ -41,7 +29,7 @@ class MainMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chapter 9 - Scrolling Lists & Effects'),
+        title: const Text('scrolling lists'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
@@ -91,9 +79,7 @@ class _MenuCard extends StatelessWidget {
   }
 }
 
-// ============================================
-// 1. CARD WIDGET EXAMPLES
-// ============================================
+
 class CardExamples extends StatelessWidget {
   const CardExamples({Key? key}) : super(key: key);
 
@@ -104,7 +90,6 @@ class CardExamples extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
-          // Default Card
           Card(
             elevation: 8.0,
             color: Colors.white,
@@ -133,7 +118,6 @@ class CardExamples extends StatelessWidget {
           const Text('Default', style: TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 20),
 
-          // StadiumBorder
           Card(
             elevation: 8.0,
             color: Colors.white,
@@ -162,7 +146,6 @@ class CardExamples extends StatelessWidget {
           const Text('StadiumBorder', style: TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 20),
 
-          // UnderlineInputBorder
           Card(
             elevation: 8.0,
             color: Colors.white,
@@ -193,7 +176,6 @@ class CardExamples extends StatelessWidget {
           const Text('UnderlineInputBorder', style: TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 20),
 
-          // OutlineInputBorder
           Card(
             elevation: 8.0,
             color: Colors.white,
@@ -228,9 +210,6 @@ class CardExamples extends StatelessWidget {
   }
 }
 
-// ============================================
-// 2. LISTVIEW.BUILDER EXAMPLE
-// ============================================
 class ListViewExample extends StatelessWidget {
   const ListViewExample({Key? key}) : super(key: key);
 
@@ -356,9 +335,7 @@ class RowWidget extends StatelessWidget {
   }
 }
 
-// ============================================
-// 3. GRIDVIEW EXAMPLES
-// ============================================
+
 class GridViewExamples extends StatelessWidget {
   const GridViewExamples({Key? key}) : super(key: key);
 
@@ -557,9 +534,7 @@ class GridViewBuilderExample extends StatelessWidget {
   }
 }
 
-// ============================================
-// 4. STACK EXAMPLE
-// ============================================
+
 class StackExample extends StatelessWidget {
   const StackExample({Key? key}) : super(key: key);
 
@@ -699,9 +674,7 @@ class StackFavoriteWidget extends StatelessWidget {
   }
 }
 
-// ============================================
-// 5. CUSTOMSCROLLVIEW WITH SLIVERS
-// ============================================
+
 class CustomScrollViewExample extends StatelessWidget {
   const CustomScrollViewExample({Key? key}) : super(key: key);
 
